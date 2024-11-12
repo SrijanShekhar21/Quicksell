@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap");
+
+.selectGroup {
+  padding: 2.5px;
+  width: auto;
+}
+
+.displayButton {
+  position: relative;
+}
+
+.dropOnClick {
+  position: absolute;
+  width: 250px;
+  background-color: hsla(220, 22%, 98%, 1);
+  border-radius: 8px;
+  top: 2.5rem;
+  left: 0.5rem;
+  border: 1px solid hsl(0, 0%, 85%);
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+  z-index: 5;
+}
+
+.dropOnClick > * {
+  width: 100%;
+}
+
+.btn {
+  background: #ffffff;
+  border: 2px solid #c1c1c1;
+  border-radius: 5px;
+}
+
+.selectStyle {
+  width: 100px;
+  border-radius: 5px;
+  background: white;
+  padding: 2px 5px;
+}
+
+.displayButton {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 2rem 0 2rem;
+}
+
+.insideButton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  border: 1px solid hsl(0, 0%, 85%);
+  margin-left: 0.5rem;
+  padding: 0.2rem;
+  width: 8rem;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.top-header {
+  /* border: 2px solid red; */
+  padding: 1rem 0 1rem 0;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.selectGroup span {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: hsl(0, 0%, 50%);
+}
+
+.selectGroup select {
+  /* border: 2px solid red; */
+  outline: none;
+  border: 1px solid hsl(0, 0%, 75%);
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+  .dropOnClick {
+    width: 100%;
+    /* Adjust the width for smaller screens */
+    max-width: 300px;
+    /* Set a maximum width if needed */
+  }
+}
